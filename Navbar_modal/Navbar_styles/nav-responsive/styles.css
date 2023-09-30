@@ -25,17 +25,35 @@ body {
     justify-content: space-between;
     align-items    : center;
     z-index        : 100;
+
+}
+
+.header::before {
+    content        : '';
+    width          : 100%;
+    height         : 100%;
+    top            : 0;
+    left           : 0;
+    position       : absolute;
     background     : rgba(0, 0, 0, .1);
     backdrop-filter: blur(50px);
+    z-index        : -1;
 }
+
+
 
 .nav-brand {
     width: 100px;
 }
 
+.navbar,
 .nav-links {
-    display   : flex;
+    display: flex;
+}
+
+.nav-links {
     list-style: none;
+
 }
 
 .nav-links li {
@@ -51,3 +69,88 @@ body {
 }
 
 /*navbar*/
+
+/*nav menu responsive*/
+.menu {
+    right    : 5%;
+    color    : white;
+    font-size: 2.8rem;
+    display  : none;
+    cursor   : pointer;
+    position : absolute;
+}
+
+#check {
+    display: none;
+}
+
+/*nav menu responsive*/
+
+/*Media Query*/
+@media (max-width: 992px) {
+    .header {
+        padding: 1.3rem 5%;
+    }
+}
+
+@media(max-width: 768px) {
+    .menu {
+        display: inline-flex;
+    }
+
+    .menu #close-icon {
+        display: none;
+    }
+
+    /*create menu mobile*/
+    #check:checked~.menu #menu-icon {
+        display: none;
+    }
+
+    #check:checked~.menu #close-icon {
+        display: block;
+    }
+
+    #check:checked~.navbar {
+        height: 17.7rem;
+    }
+
+    #check:checked~.navbar a {
+        opacity  : 1;
+        transform: translateY(0);
+    }
+
+    /*end create menu mobile*/
+
+
+    .navbar {
+        width          : 100%;
+        height         : 0rem;
+        top            : 100%;
+        left           : 0;
+        position       : absolute;
+        background     : rgba(0, 0, 0, .1);
+        backdrop-filter: blur(50px);
+        box-shadow     : 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display        : block;
+        transition     : .3s ease;
+        overflow       : hidden;
+
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .navbar a {
+        font-size : 1.1rem;
+        margin    : 1.5rem 0;
+        display   : block;
+        text-align: center;
+        transform : translateY(-50px);
+        transition: .3s ease;
+        opacity   : 0;
+    }
+}
+
+/*Media Query*/
