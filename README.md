@@ -1,6 +1,12 @@
 # Modal_HTML_CSS
 Basic elements for building a web, landing page, multi page. which in the element contains the navbar, home page etc.
-1. Navbar basic
+
+#Basic Layout
+   
+   ![layouts](https://github.com/WellkitDev/Modal_HTML_CSS/assets/82035540/d61c4b78-1171-40d7-9d44-d1c0f775993f)
+
+
+#Navbar basic
    ![image](https://github.com/WellkitDev/Modal_HTML_CSS/assets/82035540/e66104ba-fb6f-4bc5-baa8-d9ca337a9c6d)
 
 
@@ -10,12 +16,14 @@ Basic elements for building a web, landing page, multi page. which in the elemen
    ![image](https://github.com/WellkitDev/Modal_HTML_CSS/assets/82035540/ff535552-46d4-4ab2-84a1-3614e8a16565)
 
 
-2. Navbar styles
+#Navbar styles
 
    ![image](https://github.com/WellkitDev/Modal_HTML_CSS/assets/82035540/2719e612-d722-481b-a693-19db13e0ccaa)
 
 
    ![image](https://github.com/WellkitDev/Modal_HTML_CSS/assets/82035540/44b4241d-1961-402f-acbf-c7e3077487f5)
+
+
 
 
 
